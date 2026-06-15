@@ -71,9 +71,7 @@ export default function Home() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '2px' }}>
             {CLINICS.map((c, i) => (
-              <a key={c.title} href={c.href} style={{ background: i % 2 === 0 ? '#f7f6f3' : '#fff', border: '1px solid #e4e1d9', padding: '32px 24px', display: 'block', textDecoration: 'none', transition: 'border-color .2s' }}
-                onMouseEnter={e => (e.currentTarget.style.borderColor = '#8B6B3D')}
-                onMouseLeave={e => (e.currentTarget.style.borderColor = '#e4e1d9')}>
+              <a key={c.title} href={c.href} style={{ background: i % 2 === 0 ? '#f7f6f3' : '#fff', border: '1px solid #e4e1d9', padding: '32px 24px', display: 'block', textDecoration: 'none', transition: 'border-color .2s' }}>
                 <div style={{ fontSize: '28px', marginBottom: '14px' }}>{c.icon}</div>
                 <div style={{ fontFamily: 'Georgia, serif', fontSize: '17px', fontWeight: 400, color: '#161616', marginBottom: '8px' }}>{c.title}</div>
                 <div style={{ fontSize: '13px', fontWeight: 300, color: '#888', lineHeight: 1.8 }}>{c.desc}</div>
